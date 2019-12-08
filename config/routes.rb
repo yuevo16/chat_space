@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  get 'messages/index'
+  # get 'messages/index'
 
-  get 'groups/index'
+  # get 'groups/index'
 
   # get 'messages/index'
 
   root "messages#index"
-  resources :messages, only: [:new]
+  resources :messages
 end

@@ -1,0 +1,21 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      .main-header__left-box__current-group
+        テスト
+      .main-header__left-box__member-list
+        member: 
+        .main-header__left-box__member
+          name
+    .main-header__edit-btn
+      Edit
+  .messages
+  .form
+    %form{class: "new-message"}
+      .new-message_form
+        .new-message_box
+          %input{placeholder:"type a message", class: "new-messgae__text", type:"text"}
+          %label{class: "input-box_image"}
+            = icon('fas', 'image')
+            %input{class: "input-box_image_file", type: "file"}
+        %input{value:"Send", class: "submit", type: "submit"}
