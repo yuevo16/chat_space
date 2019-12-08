@@ -28,10 +28,11 @@
   font-weight: bold;
   display: flex;
   justify-content: space-between;
+  &__menu {
+    display: flex;
+  }
 }
-.side-header__box__menu {
-  display: flex;
-}
+
 
 .contents__btn {
   color: #ffffff;
@@ -54,17 +55,19 @@
   height: 91px;
   width: 260px;
   margin: 0 auto;
+  &__group-name {
+    font-size: 15px;
+    width: auto;
+  }
+  &__latest-message {
+    font-size: 11px;
+    width: auto;
+  }
+  
 }
 
-.group__group-name {
-  font-size: 15px;
-  width: auto;
-}
 
-.group__latest-message {
-  font-size: 11px;
-  width: auto;
-}
+
 
 
 
@@ -87,43 +90,46 @@
   height: 99px;
   border-bottom: solid 1px #eee;
   padding: 0 40px;
+  &__edit-btn {
+    color: #38aef0;
+    border: solid 1px #38aef0;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    margin-top: 28px;
+  }
+  &__left-box {
+    width: 60px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    &__current-group {
+      font-size: 20px;
+    }
+    &__member-list {
+      font-size: 12px;
+      color: #999999;
+      display: flex;
+    }
+    &__member {
+      font-size: 12px;
+    }
+  }
 }
 
-.main-header__left-box {
-  width: 60px;
-  padding-top: 35px;
-  box-sizing: border-box;
-
-}
 
 
 
-.main-header__left-box__current-group {
-  font-size: 20px;
 
-}
 
-.main-header__left-box__member-list {
-  font-size: 12px;
-  color: #999999;
-  display: flex;
-}
 
-.main-header__left-box__member {
-  font-size: 12px;
-}
 
-.main-header__edit-btn {
-  color: #38aef0;
-  border: solid 1px #38aef0;
-  padding: 0 20px;
-  height: 40px;
-  line-height: 40px;
-  position: absolute;
-  right: 40px;
-  top: 8px;
-  margin-top: 28px;
-}
+
+
+
+
 
 
 
@@ -148,40 +154,48 @@
   background-color: #ddd;
 }
 
-.new-message_form {
-  display: flex;
+.new-message {
+  &_form {
+    display: flex;
+    &_box {
+      display: flex;
+      position: relative;
+      width: 100%;
+      &_text {
+        height: 50px;
+        width: 100%;
+        padding: 0 40px 0 10px;
+        color: #434a54;
+        border-style: none;
+      }
+    }
+  }
+  
+  
 }
 
-.new-message_box {
-  display: flex;
-  position: relative;
-  width: 100%;
-}
 
-.new-messgae__text {
-  height: 50px;
-  width: 100%;
-  padding: 0 40px 0 10px;
-  color: #434a54;
-  border-style: none;
-}
+
+
 
 .input-box {
   width: 100%;
+  &_image {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  
+  }
+  &_image_file {
+    display: none;
+  }
+  
 }
 
-.input-box_image {
-  font-size: 1.3rem;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
 
-}
 
-.input-box_image_file {
-  display: none;
-}
 
 .form__btn {
   color: black;
