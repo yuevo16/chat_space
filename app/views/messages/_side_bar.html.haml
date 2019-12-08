@@ -1,0 +1,24 @@
+.chat-side
+  .side-header
+    .side-header__box
+      .side-header__box__user-name
+        name
+      .side-header__box__menu
+        .side-header__box__new-group
+          = link_to "#", class: "contents__btn" do
+            = icon('fas', 'edit')
+        .side-header__box__edit-user
+          = link_to "#", class: "contents__btn" do
+            = icon('fas', 'cog')
+  .groups
+    .group
+      .group__group-name
+        テスト
+      .group__latest-message
+        まだメッセージはありません
+    .group
+      .group__group-name
+        テスト2
+      .group__latest-message
+        まだメッセージはありません2
+
