@@ -19,30 +19,23 @@
   display: flex;
   align-items: center;
   padding: 0 20px;
-}
-
-.side-header__box {
-  background-color: #253141;
-  height: 20px;
-  width: 260px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  &__menu {
+  &__box {
+    background-color: #253141;
+    height: 20px;
+    width: 260px;
+    font-weight: bold;
     display: flex;
+    justify-content: space-between;
+    &__menu {
+      display: flex;
+    }
   }
 }
-
 
 .contents__btn {
   color: #ffffff;
 
 }
-
-
-
-
-
 
 .groups {
   background-color: #2f3e51;
@@ -65,19 +58,6 @@
   }
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .chat-main {
   width: calc(100vw - 190px);
@@ -119,34 +99,11 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .messages {
   height: calc(100vh - 190px);
   background-color: #fafafa;
   padding: 46px 40px;
 }
-
-
-
-
-
-
-
 
 .form {
   height: 90px;
@@ -174,10 +131,6 @@
   
 }
 
-
-
-
-
 .input-box {
   width: 100%;
   &_image {
@@ -193,9 +146,6 @@
   }
   
 }
-
-
-
 
 .form__btn {
   color: black;
