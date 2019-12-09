@@ -10,7 +10,6 @@
 .chat-side {
   color: white;
   float: left;
-  
 }
 
 .side-header {
@@ -28,8 +27,13 @@
     justify-content: space-between;
     &__menu {
       display: flex;
+      color: white;
     }
   }
+}
+
+.icon {
+  color: white;
 }
 
 .contents__btn {
@@ -80,6 +84,7 @@
     right: 40px;
     top: 8px;
     margin-top: 28px;
+    cursor: pointer;
   }
   &__left-box {
     width: 60px;
