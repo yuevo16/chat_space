@@ -10,12 +10,12 @@
     .main-header__edit-btn
       Edit
   .messages
+    = render @messages
   .form
-    %form{class: "new-message"}
-      .new-message_form
-        .new-message_form_box
-          %input{placeholder:"type a message", class: "new-message_form_box_text", type:"text"}
-          %label{class: "input-box_image"}
-            = icon('fas', 'image')
-            %input{class: "input-box_image_file", type: "file"}
-        %input{value:"Send", class: "submit", type: "submit"}
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon__image')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
