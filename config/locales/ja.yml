@@ -60,7 +60,7 @@ ja:
     - :year
     - :month
     - :day
-    datetime:
+  datetime:
     distance_in_words:
       about_x_hours:
         one: 約1時間
@@ -155,7 +155,7 @@ ja:
         significant: false
         strip_insignificant_zeros: false
         unit: 円
-  format:
+    format:
       delimiter: ","
       precision: 3
       separator: "."

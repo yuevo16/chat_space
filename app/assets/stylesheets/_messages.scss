@@ -10,6 +10,11 @@
 .chat-side {
   color: white;
   float: left;
+  a, a:hover, a:visited{
+    color:white;
+    text-decoration: none;
+  }
+
 }
 
 .side-header {
@@ -44,24 +49,34 @@
 .groups {
   background-color: #2f3e51;
   height: calc(100vh - 100px);
+  width: 100%;
   float: left;
   padding: 20px 20px 0 20px;
+  .group {
+    height: 91px;
+    width: 260px;
+    margin: 0 auto;
+    &__name {
+      font-size: 15px;
+      width: auto;
+    }
+    &__message {
+      font-size: 11px;
+      width: auto;
+    }
+    
+  }
 }
 
-.group {
-  height: 91px;
-  width: 260px;
-  margin: 0 auto;
-  &__group-name {
-    font-size: 15px;
-    width: auto;
-  }
-  &__latest-message {
-    font-size: 11px;
-    width: auto;
-  }
-  
+
+
+.new_message {
+  width: 100%;
+  display: flex;
+  position: relative;
 }
+
+
 
 .chat-main {
   width: calc(100vw - 190px);
@@ -110,53 +125,53 @@
   padding: 46px 40px;
 }
 
+
+
+
 .form {
   height: 90px;
   padding: 20px 40px;
   background-color: #ddd;
-}
-
-.new-message {
-  &_form {
-    display: flex;
-    &_box {
+  display: flex;
+  &__message {
+    height: 50px;
+    width: 100%;
+    padding: 0 40px 0 10px;
+    color: #434a54;
+    border-style: none;
+    position: relative;
+  }
+  .form__mask { 
+    &__image {
       display: flex;
-      position: relative;
+      position: absolute;
+      top: 7px;
+      right: 110px;
       width: 100%;
-      &_text {
-        height: 50px;
-        width: 100%;
-        padding: 0 40px 0 10px;
-        color: #434a54;
-        border-style: none;
-      }
     }
   }
-  
-  
 }
 
-.input-box {
+.icon {
   width: 100%;
-  &_image {
+  &__image {
     font-size: 1.3rem;
     position: absolute;
     top: 10px;
     right: 10px;
-    cursor: pointer;
-  
+    cursor: pointer;  
   }
-  &_image_file {
-    display: none;
-  }
-  
+}
+
+.hidden {
+  display: none;
 }
 
 .form__btn {
   color: black;
 }
 
-.submit {
+.form__submit {
   width: 94px;
   height: 50px;
   padding: 0 30px;

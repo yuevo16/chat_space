@@ -27,9 +27,9 @@ ja:
         updated_at: 更新日
     models:
       user: ユーザ
-      devise:
+  devise:
     confirmations:
-      confirmed: アカウントを登録しました。
+      confirmed: メールアドレスが確認できました。
       new:
         resend_confirmation_instructions: アカウント確認メール再送
       send_instructions: アカウントの有効化について数分以内にメールでご連絡します。
@@ -59,7 +59,7 @@ ja:
         message: パスワードが再設定されたことを通知します。
         subject: パスワードの変更について
       reset_password_instructions:
-      action: パスワード変更
+        action: パスワード変更
         greeting: "%{recipient}様"
         instruction: パスワード再設定の依頼を受けたため、メールを送信しています。下のリンクからパスワードの再設定ができます。
         instruction_2: パスワード再設定の依頼をしていない場合、このメールを無視してください。
@@ -88,7 +88,7 @@ ja:
       send_paranoid_instructions: メールアドレスが登録済みの場合、パスワード再設定用のメールが数分以内に送信されます。
       updated: パスワードが正しく変更されました。
       updated_not_active: パスワードが正しく変更されました。
-      registrations:
+    registrations:
       destroyed: アカウントを削除しました。またのご利用をお待ちしております。
       edit:
         are_you_sure: 本当によろしいですか?
