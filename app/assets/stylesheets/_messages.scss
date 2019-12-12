@@ -100,9 +100,13 @@
     top: 8px;
     margin-top: 28px;
     cursor: pointer;
+    a, a:hover, a:visited{
+      color:#38aef0;
+      text-decoration: none;
+    }
   }
   &__left-box {
-    width: 60px;
+    width: 200px;
     padding-top: 35px;
     box-sizing: border-box;
     &__current-group {
@@ -126,7 +130,18 @@
   overflow: scroll;
 }
 
-
+.upper-message {
+  display: flex;
+  margin-bottom: 10px;
+  &__user-name {
+    font-weight: bold;
+  }
+  &__date {
+    color: #999999;
+    margin-left: 10px;
+    font-size: 12px;
+  }
+}
 
 
 .form {
