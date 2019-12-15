@@ -2,7 +2,7 @@ $(function(){
   function buildHTML(message){
     if ( message.image ) {
       var html =
-       `<div class="message" data-message-id=${message.id}>
+       `<div class="message" data-id=${message.id}>
           <div class="upper-message">
             <div class="upper-message__user-name">
               ${message.user_name}
@@ -21,7 +21,7 @@ $(function(){
       return html;
     } else {
       var html =
-         `<div class="message" data-message-id=${message.id}>
+         `<div class="message" data-id=${message.id}>
             <div class="upper-message">
               <div class="upper-message__user-name">
                 ${message.user_name}
@@ -66,7 +66,7 @@ $(function(){
   });
   var reloadMessages = function() {
     //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
-    last_message_id = $('.message:last').data('message-id');
+    last_message_id = $('.message:last').data('id');
     $.ajax({
       //ルーティングで設定した通り/groups/id番号/api/messagesとなるよう文字列を書く
       url: "api/messages",
@@ -92,3 +92,4 @@ $(function(){
   };
   setInterval(reloadMessages, 7000);
 });
+
