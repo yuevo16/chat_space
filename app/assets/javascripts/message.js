@@ -8,7 +8,7 @@ $(function(){
               ${message.user_name}
             </div>
             <div class="upper-message__date">
-              ${message.date}
+              ${message.created_at}
             </div>
           </div>
           <div class="lower-message">
@@ -27,7 +27,7 @@ $(function(){
                 ${message.user_name}
               </div>
               <div class="upper-message__date">
-                ${message.date}
+                ${message.created_at}
               </div>
             </div>
             <div class="lower-message">
@@ -85,7 +85,10 @@ $(function(){
       });
       //メッセージが入ったHTMLに、入れ物ごと追加
       $('.messages').append(insertHTML);
+      $('.messages').val('');
+      $('.messages').removeAttr('disabled');
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+      return false
     })
     .fail(function() {
     });
